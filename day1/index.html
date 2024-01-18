@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input & Output Tags</title>
+</head>
+
+<body>
+    <!-- 
+        Input tags:
+            Form
+        Output tags:
+            Table
+     -->
+
+    <!-- <table border="1" style="border-collapse: collapse;">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td rowspan="2" colspan="3"><img src="./Frederik,_Crown_Prince_of_Denmark_in_2018.jpg" alt=""></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+    </table> -->
+
+    <!-- <form>
+        <label>Full Name</label>
+        <input type="text" placeholder="Full Name"> <br><br>
+        <label>Age</label>
+        <input type="number" placeholder="Age">
+    </form> -->
+
+    <!-- <table>
+        <form action="https://www.google.com">
+            <tr>
+                <td><label>Full Name</label></td>
+                <td>
+                    <input type="text" placeholder="Full Name">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>Age</label>
+                </td>
+                <td>
+                    <input type="number" placeholder="Age">
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Submit!"></td>
+            </tr>
+        </form>
+    </table> -->
+    <center>
+    <h1>Book a table</h1>
+    <table border="1" style="border-collapse: collapse;">
+        <tr>
+            <td>
+                <img src="./form.jpg" height="375" width="250" alt="">
+            </td>
+            <td>
+                <table border="1" style="border-collapse: collapse;">
+                    <form action="menu.html">
+
+                        <tr>
+                            <td><label>Full name</label></td>
+                            <td><input type="text" placeholder="Full Name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>Phone Number</label></td>
+                        <td>
+                            <input type="tel" placeholder="Phone Number" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label>Quantity</label>
+                        </td>
+                        <td>
+                            <input type="number" placeholder="Number of People" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label>Email</label>
+                        </td>
+                        <td>
+                            <input type="email" placeholder="Email" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Date & Time</label>
+                        </td>
+                        <td>
+                            <input type="datetime-local" placeholder="Date & Time" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Origin</label>
+                        </td>
+                        <td>
+                            <select>
+                                <option>--Select your option--</option>
+                                <option>India</option>
+                                <option>USA</option>
+                                <option>UK</option>
+                                <option>Pakistan</option>
+                                <option>Hong Kong</option>
+                                <option>China</option>
+                                <option>Dubai</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Gender</label></td>
+                        <td>
+                            <ul>
+                                <li><input type="radio" name="gender"> <label>Male</label></li>
+                                <li><input type="radio" name="gender"> <label>Female</label></li>
+                                <li><input type="radio" name="gender"> <label>Custom</label></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Prefernece</label></td>
+                        <td>
+                            <p>Select both for both options</p>
+                            <ul>
+                                <li><input type="checkbox"> <label>Veg</label></li>
+                                <li><input type="checkbox"> <label>Non-Veg</label></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><center><input type="submit" value="Submit!"></center></td>
+                    </tr>
+                </table>
+            </form>
+            </td>
+        </tr>
+    </table>
+    </center>
+</body>
+
+</html>
