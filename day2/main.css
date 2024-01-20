@@ -1,0 +1,52 @@
+/* h1 {
+    color: blue;
+} */
+/* 
+h1 {
+    color: red;
+} */
+
+/* pseudo css class */
+/* h1:nth-child(2n+1) {
+    color: red;
+} */
+
+/* .head1 {
+    color: red;
+}
+
+.head2 {
+    border: 1px solid red;
+} */
+
+
+div {
+    border: 1px solid black;
+    height: 300px;
+    width: 300px;
+    /* height: 100%; */
+    /* width: 100%; */
+    /* border-top: 5px solid blue;
+    border-bottom:5px solid red;
+    border-left: 5px solid green;
+    border-right: 5px solid violet; */
+    /* border-radius: 100%; */
+    /* border-top-right-radius: 100%;
+    border-top-left-radius: 100%;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%; */
+
+    /* margin: 20px; */
+    /* margin: 20px 20px; */
+    /* margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px; */
+
+    /* padding: 20px; */
+    /* padding: 20px 10px; */
+    /* padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px; */
+}
