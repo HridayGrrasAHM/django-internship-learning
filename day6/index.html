@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS if...else & Loops</title>
+</head>
+
+<body>
+    <script>
+        /**
+         * if(condition) {
+         *  code
+         * } else if(condition) {
+         * code
+         * } else {
+         *  code
+         * }
+         * 
+         * 
+         */
+        // if(true) {
+        //     // code
+        //     console.log("Hello")
+        // } else {
+        //     console.log("Bye")
+        // }
+        // if (false) {
+        //     console.log("Hello")
+        // } else {
+        //     console.log("Bye")
+        // }
+
+        // if((2>3) == false) {
+        //     console.log("2 is larger")
+        // } else {
+        //     console.log("2 is smaller")
+        // }
+        // if ((2 < 3) == false) {
+        //         console.log("2 is larger")
+        //     } else {
+        //         console.log("2 is smaller")
+        //     }
+        // let x = prompt("Enter your name")
+        // console.log(x)
+        // alert(x)
+        // confirm(x)
+
+        // let a = prompt("Enter first value"), 
+        //     b = prompt("Enter second value"), 
+        //     c = prompt("Enter third value")
+
+        // console.log(a, b, c)
+
+        // nested if
+        // if (a > b) {
+        //     if (a > c) {
+        //         // console.log("A", a)
+        //         confirm(a)
+        //     } else {
+        //         // console.log("C", c)
+        //         confirm(c)
+        //     }
+        // } else if (b > a) {
+        //     if (b > c) {
+        //         // console.log("B", b)
+        //         confirm(b)
+        //     } else {
+        //         // console.log("C", c)
+        //         confirm(c)
+        //     }
+        // } else {
+        //     // console.log("C", c)
+        //     confirm(c)
+        // }
+
+        // if else ladder
+        let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thrusday' ,'Friday', 'Saturday']
+        let inp = Number(prompt("Enter your number"))
+
+        // if (inp == 1) {
+        //     console.log(days[0])
+        // } else if (inp == 2) {
+        //     console.log(days[1])
+        // } else if (inp == 3) {
+        //     console.log(days[2])
+        // } else if (inp == 4) {
+        //     console.log(days[3])
+        // } else if (inp == 5) {
+        //     console.log(days[4])
+        // } else if (inp == 6) {
+        //     console.log(days[5])
+        // } else if (inp == 7) {
+        //     console.log(days[6])
+        // } else {
+        //     console.log("Invalid")
+        // }
+            if(inp <= days.length) {
+                if(inp == 0) {
+                    console.log("Invalid")
+                } else {
+                    console.log(days[inp-1])
+                }
+            } else {
+                console.log("Invalid")
+                // console.log(inp+1)
+            }
+        console.log(days.length)
+    </script>
+</body>
+
+</html>

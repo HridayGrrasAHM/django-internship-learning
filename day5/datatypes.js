@@ -147,7 +147,9 @@ let marks = [
 
 marks.map((m)=>{
     console.log("---------------------------")
-    console.log(m.name, "\tEnglish :", m.marks.english, "\t | \n\t\tMaths: ", m.marks.maths, "\t\t | \n\t\tScience: ", Number(m.marks.science), "\t |")
     console.log("---------------------------")
+    console.log(m.name, "\tEnglish :", m.marks.english, "\t | \n\t\tMaths: ", m.marks.maths, "\t\t | \n\t\tScience: ", Number(m.marks.science), "\t |")
+    // console.log("---------------------------")
     // console.log("--------------")
 })
+console.log("---------------------------")
