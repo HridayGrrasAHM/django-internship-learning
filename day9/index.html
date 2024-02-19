@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM - 2</title>
+</head>
+
+<body>
+    <!-- <input type="radio" name="gender" id="gender" value="Male"> <label>Male</label>
+    <input type="radio" name="gender" id="gender" value="Female"> <label>Female</label> -->
+    <input type="checkbox" name="hob" id="hob" value="Cricket"> <label>Cricket</label>
+    <input type="checkbox" name="hob" id="hob" value="Skating"> <label>Skating</label>
+    <input type="checkbox" name="hob" id="hob" value="Stock Market"> <label>Stock Market</label>
+    <br><br>
+    <button onclick="getGender()">Submit</button>
+    <br><br>
+    <p id="demo"><b>Hello world</b></p>
+    <script>
+        // let data = "Hriday Goswami"
+        // localStorage.setItem("data", data)
+        function getGender() {
+            // let gender = document.getElementById("gender").value
+            // try {
+            //     let gender = document.querySelector('input[type="radio"]:checked').value
+            //     console.log(gender)
+            //     document.getElementById("demo").innerText = `You are a ${gender}`
+            // }catch(err) {
+            //     document.getElementById("demo").innerText = `Please select a value`
+            // }
+            try {
+
+                let hob = document.querySelectorAll("input[type='checkbox']:checked")
+                // console.log(hob[0].value)
+                if (hob.length == 0) throw "Please select a value"
+                else {
+
+                    let outStr = ""
+                    for (let i = 0; i < hob.length; i++) {
+                        // console.log(hob[i].value)
+                        if (i == hob.length - 1) {
+                            outStr = outStr + `<b>${hob[i].value}</b>.`
+                        } else {
+                            outStr = outStr + `<b>${hob[i].value}, </b>`
+                        }
+                    }
+                    console.log(hob)
+                    document.getElementById("demo").innerHTML = `Selected values are: ${outStr}`
+                }
+
+            } catch (err) {
+                document.getElementById("demo").innerText = err
+            }
+
+        }
+    </script>
+</body>
+
+</html>
