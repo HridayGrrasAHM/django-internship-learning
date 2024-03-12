@@ -1,0 +1,22 @@
+-- To install virtual environment
+pip install virtualenv
+
+-- To setup virtual environment
+virtualenv <env-name> / python -m virtualenv <env-name>
+Set-ExecutionPolicy Unrestricted -Scope Process
+./<env-name>/Scripts/activate
+
+
+-- To install a package
+pip install django
+
+
+-- To start the application
+python -m django startproject <project-name>
+cd <project-name>
+
+-- To create an app
+python -m django startapp <app-name>
+
+-- To start the django server
+python manage.py runserver
