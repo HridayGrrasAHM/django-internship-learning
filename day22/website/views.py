@@ -22,6 +22,9 @@ def home(request, token):
 
 def everyone(request, id):
     d = Login.objects.get(pk=id)
+    img = f"{d.id}.png"
+    print(img)
     return render(request, "user.html", {
+        "img":img,
         "d":d
     })

@@ -9,7 +9,7 @@
     <h1>Welcome to Home</h1>
     <ul>
     {% for d in data %}
-        <li><a href="{% url 'Everyone' d.id %}">{{d.id}} {{d.fullName}} {{d.age}}</li>
+        <li><a href="{% url 'Everyone' d.id %}">{{d.id}} {{d.fullName}} {{d.age}}</a></li> 
     {% endfor %}
     </ul>
 </body>

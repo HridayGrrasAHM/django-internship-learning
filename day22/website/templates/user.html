@@ -1,12 +1,28 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #demo {
+            /* visibility: hidden; */
+            opacity: 0;
+        }
+    </style>
 </head>
 <body>
+    <p id="demo">{{d.id}}</p>
     <h1>Name: {{d.fullName}}</h1>
     <h2>age: {{d.age}}</h2>
+    <img id="img" src='' alt="">
+
+    <script>
+        let path = document.getElementById("demo").innerText 
+        console.log(path)
+        document.getElementById("img").src = `{% static '${path}.png' %}`
+        console.log(document.getElementById("img").src)
+    </script>
 </body>
 </html>
